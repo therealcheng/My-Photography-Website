@@ -2,9 +2,21 @@ import { Navbar, Button, Link, Text } from '@nextui-org/react';
 import { FaGithub, Fa500Px, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 export default function NavBar() {
+  const collapseItems = [
+    'Features',
+    'Customers',
+    'Pricing',
+    'Company',
+    'Legal',
+    'Team',
+    'Help & Feedback',
+    'Login',
+    'Sign Up',
+  ];
   return (
     <Navbar shouldHideOnScroll isCompact isBordered variant='floating'>
       <Navbar.Brand>
+        <Navbar.Toggle aria-label='toggle navigation' />
         <Text b color='inherit' hideIn='xs'>
           Cheng Lim Photography
         </Text>
@@ -33,6 +45,22 @@ export default function NavBar() {
           <FaTwitter />
         </Link>
       </Navbar.Content>
+
+      <Navbar.Collapse>
+        {collapseItems.map((item, index) => (
+          <Navbar.CollapseItem key={item}>
+            <Link
+              color='inherit'
+              css={{
+                minWidth: '100%',
+              }}
+              href='#'
+            >
+              {item}
+            </Link>
+          </Navbar.CollapseItem>
+        ))}
+      </Navbar.Collapse>
     </Navbar>
   );
 }
