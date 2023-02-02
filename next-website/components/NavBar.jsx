@@ -9,7 +9,11 @@ export default function NavBar() {
           Cheng Lim Photography
         </Text>
       </Navbar.Brand>
-      <Navbar.Content hideIn='xs' variant='highlight-rounded'>
+      <Navbar.Content
+        enableCursorHighlight
+        hideIn='xs'
+        variant='highlight-rounded'
+      >
         <Navbar.Link isActive href='#'>
           Home
         </Navbar.Link>
