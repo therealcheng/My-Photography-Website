@@ -1,10 +1,27 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
 import Navbar from '@/components/Navbar';
+import Gallery from '@/components/Gallery';
+import test from '../public/test.jpg';
 
-const inter = Inter({ subsets: ['latin'] });
+const images = [
+  {
+    id: 1,
+    src: { test },
+    alt: 'Image 1',
+  },
+  {
+    id: 2,
+    src: { test },
+    alt: 'Image 2',
+  },
+  {
+    id: 3,
+    src: { test },
+    alt: 'Image 3',
+  },
+];
 
 export default function Home() {
   return (
@@ -16,6 +33,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
+      <Gallery images={images} />
     </>
   );
 }

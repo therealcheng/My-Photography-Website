@@ -11,3 +11,35 @@
 .nav-font {
   font-family: 'Italiana', serif;
 }
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-4 {
+  grid-gap: 1.5rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-64 {
+  height: 64%;
+}
+
+.object-cover {
+  object-fit: cover;
+}
