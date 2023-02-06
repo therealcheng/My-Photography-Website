@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <div>
-      <div className='navbar bg-base-100'>
+      <div className='navbar bg-base-100 rounded-full'>
         <div className='navbar-start'>
           <div className='dropdown'>
             <label tabIndex={0} className='btn btn-ghost lg:hidden'>
@@ -54,12 +54,14 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className='btn btn-ghost normal-case text-xl'>daisyUI</a>
+          <a className='btn btn-ghost normal-case text-xl'>
+            Cheng Lim Photography
+          </a>
         </div>
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal px-1'>
             <li>
-              <a>Item 1</a>
+              <a>Concert</a>
             </li>
             <li tabIndex={0}>
               <a>
@@ -89,7 +91,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='navbar-end'>
-          <a className='btn'>Get started</a>
+          <a className='btn'>L</a>
         </div>
       </div>
     </div>
