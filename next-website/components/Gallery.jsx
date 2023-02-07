@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Gallery = ({ images }) => {
   return (
     <AnimatePresence>
-      <div className='grid grid-cols-3 gap-4'>
+      <div className='grid lg:grid-cols-3 lg:gap-1 p-8 gap-8'>
         {images.map((image, index) => (
           <motion.div
             key={image.id}
