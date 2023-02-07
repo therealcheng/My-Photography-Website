@@ -11,13 +11,9 @@ const Gallery = ({ images }) => {
           <motion.div
             key={image.id}
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
             className='rounded-md overflow-hidden'
-            onClick={() => {
-              console.log(image);
-              window.open(`/${image.id}`, '_self');
-            }}
           >
             <Image
               src={image.src}
