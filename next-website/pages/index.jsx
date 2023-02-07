@@ -4,21 +4,36 @@ import styles from '@/styles/Home.module.css';
 import Navbar from '@/components/Navbar';
 import Gallery from '@/components/Gallery';
 import test from '../public/test.jpg';
+import img1 from '../public/1.jpg';
+import img2 from '../public/2.jpg';
+import img3 from '../public/3.jpg';
+import img4 from '../public/4.jpg';
+import img5 from '../public/5.jpg';
 
 const images = [
   {
     id: 1,
-    src: test,
+    src: img1,
     alt: 'Image 1',
   },
   {
     id: 2,
-    src: test,
+    src: img2,
     alt: 'Image 2',
   },
   {
     id: 3,
-    src: test,
+    src: img3,
+    alt: 'Image 3',
+  },
+  {
+    id: 3,
+    src: img4,
+    alt: 'Image 3',
+  },
+  {
+    id: 3,
+    src: img5,
     alt: 'Image 3',
   },
 ];
