@@ -2,12 +2,22 @@ import { Navbar, Button, Link, Text, useTheme } from '@nextui-org/react';
 import { Layout } from './Layout.jsx';
 
 export default function NavbarNext() {
-  const { isDark } = useTheme();
-
+  const collapseItems = [
+    'Features',
+    'Customers',
+    'Pricing',
+    'Company',
+    'Legal',
+    'Team',
+    'Help & Feedback',
+    'Login',
+    'Sign Up',
+  ];
   return (
     <Layout>
-      <Navbar isBordered={isDark} variant='sticky'>
+      <Navbar variant='sticky'>
         <Navbar.Brand>
+          <Navbar.Toggle aria-label='toggle navigation' />
           <Text b color='inherit' hideIn='xs'>
             ACME
           </Text>
@@ -30,6 +40,21 @@ export default function NavbarNext() {
             </Button>
           </Navbar.Item>
         </Navbar.Content>
+        <Navbar.Collapse>
+          {collapseItems.map((item, index) => (
+            <Navbar.CollapseItem key={item}>
+              <Link
+                color='inherit'
+                css={{
+                  minWidth: '100%',
+                }}
+                href='#'
+              >
+                {item}
+              </Link>
+            </Navbar.CollapseItem>
+          ))}
+        </Navbar.Collapse>
       </Navbar>
     </Layout>
   );
