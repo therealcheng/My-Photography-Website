@@ -27,14 +27,14 @@ const images = [
     alt: 'Image 3',
   },
   {
-    id: 3,
+    id: 4,
     src: img4,
-    alt: 'Image 3',
+    alt: 'Image 4',
   },
   {
-    id: 3,
+    id: 5,
     src: img5,
-    alt: 'Image 3',
+    alt: 'Image 5',
   },
 ];
 
