@@ -4,14 +4,11 @@ import Image from 'next/image.js';
 import logo from '../public/logoLight.png';
 
 export default function NavbarNext() {
-  const collapseItems = [
-    'Home',
-    'Concert',
-    'Events',
-    'Lifestyle',
-    'Video',
-    'About',
-  ];
+  const collapseItems = ['Concert', 'Events', 'Video', 'About'];
+  const collapseItemLinks = (item) => {
+    if (item === 'Concert') return `/`;
+    else return `/${item.toLowerCase()}`;
+  };
   return (
     <Layout>
       <Navbar variant='sticky'>
@@ -24,20 +21,22 @@ export default function NavbarNext() {
         </Navbar.Brand>
         <Navbar.Content enableCursorHighlight hideIn='xs' variant='underline'>
           <Navbar.Link isActive href='/'>
-            Home
+            Concert
           </Navbar.Link>
-          <Navbar.Link href='#'>Concert</Navbar.Link>
-          <Navbar.Link href='#'>Events</Navbar.Link>
-          <Navbar.Link href='#'>Lifestyle</Navbar.Link>
-          <Navbar.Link href='#'>Video</Navbar.Link>
-          <Navbar.Link href='#'>About</Navbar.Link>
+          <Navbar.Link href='/events'>Events</Navbar.Link>
+          <Navbar.Link href='/video'>Video</Navbar.Link>
+          <Navbar.Link href='/about'>About</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content>
-          <Navbar.Link color='inherit' href='#'>
+          <Navbar.Link
+            color='inherit'
+            href='https://www.instagram.com/chenglimphotography/'
+            target='blank'
+          >
             Instagram
           </Navbar.Link>
           <Navbar.Item>
-            <Button auto flat as={Link} href='#'>
+            <Button auto flat as={Link} href='/contact'>
               Contact
             </Button>
           </Navbar.Item>
@@ -50,7 +49,7 @@ export default function NavbarNext() {
                 css={{
                   minWidth: '100%',
                 }}
-                href='#'
+                href={collapseItemLinks(item)}
               >
                 {item}
               </Link>
