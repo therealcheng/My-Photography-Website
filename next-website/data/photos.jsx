@@ -1,35 +1,21 @@
-import img1 from '../public/1.jpg';
-import img2 from '../public/2.jpg';
-import img3 from '../public/3.jpg';
-import img4 from '../public/4.jpg';
-import img5 from '../public/5.jpg';
+import img1 from '../public/concertImages/img-1.jpg';
+import img2 from '../public/concertImages/img-2.jpg';
+import img3 from '../public/concertImages/img-3.jpg';
+import img4 from '../public/concertImages/img-4.jpg';
+import img5 from '../public/concertImages/img-5.jpg';
+import img6 from '../public/concertImages/img-6.jpg';
 
-const images = [
-  {
-    id: 1,
-    src: img1,
-    alt: 'Image 1',
-  },
-  {
-    id: 2,
-    src: img2,
-    alt: 'Image 2',
-  },
-  {
-    id: 3,
-    src: img3,
-    alt: 'Image 3',
-  },
-  {
-    id: 4,
-    src: img4,
-    alt: 'Image 4',
-  },
-  {
-    id: 5,
-    src: img5,
-    alt: 'Image 5',
-  },
-];
+let images = [];
+const src = [img1, img2, img3, img4, img5, img6];
+
+for (let i = 1; i < 31; i++) {
+  images.push({
+    id: i,
+    alt: `image ${i}`,
+    src: src[i],
+  });
+}
+
+console.log(images);
 
 export default images;
