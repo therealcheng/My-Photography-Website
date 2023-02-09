@@ -19,6 +19,15 @@ const About = () => {
         and approach to photography. I'm excited to share my work with you and
         hope that you enjoy browsing through my portfolio.
       </p>
+      <p>
+        If you like what you see and are in need of a photographer, I would love
+        the opportunity to work with you. Please feel free to get in touch with
+        me via the contact form on my website, or through the contact
+        information provided. I look forward to the possibility of capturing
+        memories for you and creating beautiful and timeless images that you
+        will cherish for years to come.
+      </p>
+      <button className='btn'>Contact</button>
       <Modal />
       <CarouselBleed />
     </div>
