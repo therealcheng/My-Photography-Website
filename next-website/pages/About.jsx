@@ -1,14 +1,11 @@
 import Modal from '@/components/Modal';
 import CarouselBleed from '@/components/CarouselBleed';
 import React from 'react';
-import { Button } from '@nextui-org/react';
+import { Text, Button } from '@nextui-org/react';
+import NavbarNext from '@/components/NavbarNext';
 
 const About = () => {
-  return (
-    <div>
-      <h1>About</h1>
-      <p>
-        Welcome to my photography website! I have always had a passion for
+  const paragraph1 = `Welcome to my photography website! I have always had a passion for
         capturing memories through the lens of a camera, starting from my early
         childhood when I would snap photos of anything and everything that
         caught my eye. My love for photography really took off when I was given
@@ -19,19 +16,22 @@ const About = () => {
         event and concert photography. This work has been incredibly rewarding
         and has pushed me creatively, allowing me to develop my own unique style
         and approach to photography. I'm excited to share my work with you and
-        hope that you enjoy browsing through my portfolio.
-      </p>
-      <p>
-        If you like what you see and are in need of a photographer, I would love
+        hope that you enjoy browsing through my portfolio.`;
+  const paragraph2 = `If you like what you see and are in need of a photographer, I would love
         the opportunity to work with you. Please feel free to get in touch with
         me via the contact form on my website, or through the contact
         information provided. I look forward to the possibility of capturing
         memories for you and creating beautiful and timeless images that you
-        will cherish for years to come.
-      </p>
+        will cherish for years to come.`;
+  return (
+    <>
+      <NavbarNext />
+      <h1>About</h1>
+      <Text blockquote>{paragraph1}</Text>
+      <Text blockquote>{paragraph2}</Text>
       <Modal />
       <CarouselBleed />
-    </div>
+    </>
   );
 };
 
