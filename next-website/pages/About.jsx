@@ -1,5 +1,7 @@
 import Modal from '@/components/Modal';
 import CarouselBleed from '@/components/CarouselBleed';
+import React from 'react';
+import { Button } from '@nextui-org/react';
 
 const About = () => {
   return (
@@ -27,7 +29,6 @@ const About = () => {
         memories for you and creating beautiful and timeless images that you
         will cherish for years to come.
       </p>
-      <button className='btn'>Contact</button>
       <Modal />
       <CarouselBleed />
     </div>
