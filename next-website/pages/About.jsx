@@ -40,7 +40,10 @@ const About = () => {
         About
       </Text>
       <Image src={aboutImage1} width={600} height={80} />
-      <Text blockquote>{paragraph1}</Text>
+
+      <Text blockquote className='pt-12'>
+        {paragraph1}
+      </Text>
       <Text blockquote>{paragraph2}</Text>
       <Footer />
     </>
