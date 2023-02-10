@@ -1,12 +1,13 @@
+import Link from 'next/link';
 import { FiArrowUpLeft } from 'react-icons/fi';
 
 const HomeLink = () => {
   return (
     <div>
-      <a>
+      <Link href='/'>
         <FiArrowUpLeft />
-      </a>
-      <a>Back to Home</a>
+      </Link>
+      <Link href='/'>Back to Home</Link>
     </div>
   );
 };
