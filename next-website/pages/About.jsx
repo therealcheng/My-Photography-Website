@@ -3,6 +3,9 @@ import CarouselBleed from '@/components/CarouselBleed';
 import React from 'react';
 import { Text, Button } from '@nextui-org/react';
 import NavbarNext from '@/components/NavbarNext';
+import Image from 'next/image';
+import aboutImage1 from '../public/concertImages/img-8.jpg';
+import Footer from '@/components/Footer';
 
 const About = () => {
   const paragraph1 = `Welcome to my photography website! I have always had a passion for
@@ -26,11 +29,20 @@ const About = () => {
   return (
     <>
       <NavbarNext />
-      <h1>About</h1>
+      <Text
+        h1
+        size={60}
+        css={{
+          textGradient: '45deg, $blue600 -20%, $pink100 50%',
+        }}
+        weight='bold'
+      >
+        About
+      </Text>
+      <Image src={aboutImage1} width={600} height={80} />
       <Text blockquote>{paragraph1}</Text>
       <Text blockquote>{paragraph2}</Text>
-      <Modal />
-      <CarouselBleed />
+      <Footer />
     </>
   );
 };
