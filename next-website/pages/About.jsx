@@ -6,6 +6,7 @@ import NavbarNext from '@/components/NavbarNext';
 import Image from 'next/image';
 import aboutImage1 from '../public/concertImages/img-8.jpg';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 const About = () => {
   const paragraph1 = `Welcome to my photography website! I have always had a passion for
@@ -45,6 +46,13 @@ const About = () => {
         {paragraph1}
       </Text>
       <Text blockquote>{paragraph2}</Text>
+      <div>
+        <Link href='/contact'>
+          <button className='btn btn-xs sm:btn-sm md:btn-md lg:btn-lg'>
+            Contact
+          </button>
+        </Link>
+      </div>
       <Footer />
     </>
   );
