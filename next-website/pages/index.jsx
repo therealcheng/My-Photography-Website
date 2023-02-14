@@ -4,7 +4,6 @@ import styles from '@/styles/Home.module.css';
 import NavbarNext from '@/components/NavbarNext';
 import Gallery from '@/components/Gallery';
 import Footer from '@/components/Footer';
-import test from '../public/test.jpg';
 import images from '../data/photos';
 
 export default function Home() {

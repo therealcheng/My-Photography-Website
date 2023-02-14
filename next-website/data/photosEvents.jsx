@@ -8,7 +8,7 @@ import img7 from '../public/eventImages/7.jpg';
 
 let eventImages = [];
 let src = [img1, img2, img3, img4, img5, img6, img7];
-for (let i = 1; i < 8; i++) {
+for (let i = 1; i < 7; i++) {
   src.push({
     id: i,
     alt: `image ${i}`,
@@ -16,7 +16,7 @@ for (let i = 1; i < 8; i++) {
   });
 }
 
-for (let i = 1; i < 8; i++) {
+for (let i = 1; i < 7; i++) {
   eventImages.push({
     id: i,
     alt: `image ${i}`,
